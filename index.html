@@ -100,6 +100,7 @@
         text-decoration: none;
     }
 
+
     .logo {
         height: clamp(48px, 2.5vw, 116px);
     }
@@ -228,10 +229,18 @@
         background: #2f4bc7;
     }
 
+    header>a>span {
+        display: block;
+    }
+
     @media screen and (max-width: 640px) {
         .ticker div::after {
             top: -250%;
             right: 0;
+        }
+
+        header>a>span {
+            display: none;
         }
     }
 
