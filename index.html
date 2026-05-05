@@ -152,7 +152,8 @@
         transform: skewY(-2deg) translate(0, 0);
         width: 100%;
         transform-origin: top left;
-        animation: scrollDiagonal 100s linear infinite;
+        font-weight: 600;
+        animation: scrollDiagonal 110s linear infinite;
     }
 
     .ticker div span span {
@@ -174,9 +175,11 @@
     }
 
     .cont img {
+        height: auto;
         width: 450px;
         max-width: 80%;
         object-fit: contain;
+        padding-bottom: clamp(2rem, 2vw, 4rem);
     }
 
     .txt {
