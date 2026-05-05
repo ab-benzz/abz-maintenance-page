@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Maintenance</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <header>
+    <img src="logo.png" alt="" class="logo">
+    <a href="">
+      <span>Need help?</span>
+      <img src="help.png" alt="" width="24">
+    </a>
+  </header>
+
+  <div>
+    <div class="hero">
+      <h1>MAINTENANCE</h1>
+
+    </div>
+    <div class="ticker">
+      <span>MAINTENANCE MODE <span>✦</span> LEVELING UP FOR YOU <span>✦</span> WE'LL BE BACK SOON <span>✦</span>
+        MAINTENANCE MODE <span>✦</span> LEVELING UP FOR YOU <span>✦</span> WE'LL BE BACK SOON <span>✦</span>
+        MAINTENANCE MODE <span>✦</span> LEVELING UP FOR YOU <span>✦</span> WE'LL BE BACK SOON </span>
+    </div>
+  </div>
+
+  <div class="content">
+    <img src="eyemojis.png" alt="">
+    <div class="txt">
+      <p>Hey bestie! We're busy upgrading things for you. 🛠️ We'll be back real soon! <br>
+        Got questions? Slide into our channels and we'll get back to you. 👇</p>
+    </div>
+
+    <div class="btns">
+      <a href="https://m.me/abzph">Messenger ↗</a>
+      <a href="http://tiny.cc/abzph">Viber ↗</a>
+      <a href="tel:+639191700107">Mobile ↗</a>
+      <a href="care@abz.com.ph">Email ↗</a>
+    </div>
+  </div>
+
+</body>
+
+</html>
+
+
+
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+
+  body {
+    background: #D8F75C;
+    text-align: center;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    background-color: #3F59D9;
+    padding: 0 16px;
+  }
+
+  header>a {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: white;
+    text-decoration: none;
+  }
+
+  .logo {
+    height: clamp(48px, 2.5vw, 116px);
+  }
+
+  div:has(.hero) {
+    position: relative;
+    overflow-x: clip;
+  }
+
+  .hero {
+    background: #3F59D9;
+    color: #fff;
+    padding: 0 0 0;
+    position: relative;
+    overflow: hidden;
+    /* clip-path: polygon(0px 0px, 100% 0px, 100% 80%, 0px 100%); */
+    clip-path: polygon(0px 0px, 100% 0px, 100% 75%, 0px 100%);
+  }
+
+  .hero h1 {
+    font-size: 14vw;
+    opacity: 15%;
+    transform: skewY(-3deg);
+  }
+
+  .logo {
+    font-weight: bold;
+    font-size: 24px;
+  }
+
+  .ticker {
+    position: absolute;
+    bottom: 5%;
+    left: -1%;
+    width: 103vw;
+    background: #111;
+    color: #d4ff3f;
+    font-size: clamp(12px, 1.5vw, 16px);
+    padding: 10px 0;
+    overflow: hidden;
+    white-space: nowrap;
+    transform: rotate(-3deg)
+  }
+
+  .ticker span {
+    display: inline-block;
+    /* animation: scroll 50s linear infinite; */
+    transform: rotate(0.1deg);
+    font-weight: 600;
+    letter-spacing: 1px
+  }
+
+  .ticker span span {
+    color: white;
+    padding: 0 12px;
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  .content {
+    margin-top: 0;
+    padding: 40px 20px;
+  }
+
+  .content img {
+    width: 450px;
+    max-width: 80%;
+  }
+
+  .txt {
+    margin: 0 auto 20px;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 500;
+  }
+
+  .btns {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .btns a {
+    padding: 10px 18px;
+    border-radius: 20px;
+    background: #3b5bdb;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.2s;
+  }
+
+  .btns a:hover {
+    background: #2f4bc7;
+  }
+
+  @media (max-width: 600px) {
+    header>a>span {
+      display: none;
+    }
+
+    .ticker {
+      bottom: 0;
+    }
+
+    .hero {
+      padding: 0 0 20px;
+    }
+  }
+</style>

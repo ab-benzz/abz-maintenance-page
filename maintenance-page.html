@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" cont="width=device-width, initial-scale=1.0">
+    <title>ABZ | Maintenance Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img src="logo.png" alt="" class="logo">
+        <a href="https://tiny.cc/abzph">
+            <span>Need help?</span>
+            <img src="help.png" alt="" width="24">
+        </a>
+    </header>
+
+    <main>
+        <div>
+            <div>MAINTENANCE</div>
+        </div>
+
+        <div class="ticker">
+            <div>
+                <span>MAINTENANCE MODE <span>✦</span> LEVELING UP FOR YOU <span>✦</span> WE'LL BE BACK SOON
+                    <span>✦</span>
+                    MAINTENANCE MODE <span>✦</span> LEVELING UP FOR YOU <span>✦</span> WE'LL BE BACK SOON <span>✦</span>
+                    MAINTENANCE MODE <span>✦</span> LEVELING UP FOR YOU <span>✦</span> WE'LL BE BACK SOON <span>✦</span>
+                    MAINTENANCE MODE <span>✦</span> LEVELING UP FOR YOU <span>✦</span> WE'LL BE BACK SOON <span>✦</span>
+
+            </div>
+        </div>
+
+        <div class="cont">
+            <img src="eyemojis.png" alt="" width="467" height="351">
+            <div class="txt">
+                <p>Hey bestie! We're busy upgrading things for you. 🛠️ We'll be back real soon! <br>
+                    Got questions? Slide into our channels and we'll get back to you. 👇</p>
+            </div>
+
+            <div class="btns">
+                <a href="https://m.me/abzph">Messenger ↗</a>
+                <a href="http://tiny.cc/abzph">Viber ↗</a>
+                <a href="tel:+639191700107">Mobile ↗</a>
+                <a href="care@abz.com.ph">Email ↗</a>
+            </div>
+        </div>
+
+        <div>
+            <p>Copyright © 2025 ABZ All rights reserved.</p>
+        </div>
+    </main>
+</body>
+
+</html>
+
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        z-index: 1;
+        color: white;
+        background-color: #3F59D9;
+        padding: 0 16px;
+    }
+
+    header>a {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        color: white;
+        text-decoration: none;
+    }
+
+    .logo {
+        height: clamp(48px, 2.5vw, 116px);
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        z-index: 0;
+        overflow: hidden;
+        background-color: #D8F75C;
+        min-height: calc(100vh - 48px);
+    }
+
+    main>div:first-of-type {
+        height: fit-content;
+        background-color: #3F59D9;
+        clip-path: polygon(0px 0px, 100% 0px, 100% 95%, 0px 100%);
+        z-index: -3;
+    }
+
+    main>div:first-of-type div {
+        font-size: 13.6vw;
+        transform: skewY(-2deg) translate(0, 0);
+        opacity: 15%;
+        color: white;
+        font-weight: 600;
+        line-height: 108%;
+    }
+
+    main>div:last-of-type {
+        background-color: #282727;
+        color: white;
+        font-weight: 400;
+        text-align: center;
+        font-size: clamp(12px, 1.5vw, 14px);
+        padding: clamp(16px, 2vw, 22px) 0;
+        margin-top: auto;
+    }
+
+    .ticker {
+        position: relative;
+        padding-top: 24px;
+        z-index: 1;
+    }
+
+    .ticker::before {
+        content: "";
+        position: absolute;
+        top: -5%;
+        left: 0;
+        width: 100%;
+        height: clamp(48px, 2.5vw, 120px);
+        background-color: #282727;
+        z-index: -1;
+        transform: skewY(-2deg);
+        transform-origin: top left;
+    }
+
+    .ticker div {
+        position: absolute;
+        top: -5%;
+        white-space: nowrap;
+        color: #d8f75c;
+        font-size: 1rem;
+        padding: 10px 0 6px;
+        transform: skewY(-2deg) translate(0, 0);
+        width: 100%;
+        transform-origin: top left;
+        animation: scrollDiagonal 100s linear infinite;
+    }
+
+    .ticker div span span {
+        display: inline-block;
+        transform: rotate(0.1deg);
+        font-weight: 600;
+        letter-spacing: 1px;
+        color: white;
+        padding: 0 1rem;
+    }
+
+
+    .cont {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0;
+        padding: 40px 20px 60px;
+    }
+
+    .cont img {
+        width: 450px;
+        max-width: 80%;
+    }
+
+    .txt {
+        margin: 0 auto 20px;
+        font-size: 16px;
+        line-height: 30px;
+        font-weight: 500;
+        text-align: center;
+        color: #282727;
+    }
+
+    .btns {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .btns a {
+        padding: 10px 18px;
+        border-radius: 20px;
+        background: #3b5bdb;
+        color: white;
+        text-decoration: none;
+        font-size: 14px;
+        transition: 0.2s;
+    }
+
+    .btns a:hover {
+        background: #2f4bc7;
+    }
+
+    @media screen and (max-width: 640px) {
+        .ticker div::after {
+            top: -250%;
+            right: 0;
+        }
+    }
+
+    @keyframes scrollDiagonal {
+        0% {
+            transform: skewY(-2deg) translate(0, 0);
+        }
+
+        100% {
+            transform: skewY(-2deg) translate(-100%, 10%);
+        }
+    }
+</style>
